@@ -28,6 +28,12 @@ main.container {
   padding-top: 140px;
 }
 
+.counterRed {
+  color: blue;
+}
+
+
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
