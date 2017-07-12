@@ -32,8 +32,87 @@ main.container {
   color: blue;
 }
 
+article.tweet {
+  opacity: 0.8;
+  margin: 1.5em;
+  border: solid red 1px;
+  border-radius: 10px;
+  border-color: red;
+  background-color: white;
+  font-size: 22px;
+}
+
+article.tweet:hover {
+  opacity: 1.0;
+}
+
+article.tweet header {
+  background-color: pink;
+  padding-top: 12px;
+  padding-right: 17px;
+  padding-left: 17px;
+  padding-bottom: 12px;
+  width: 100%;
+  border-bottom: 1px solid red;
+  font-size: 18px;
+  color: #244751;
+  border-radius: 10px 10px 0px 0px;
+}
+
+article.tweet footer {
+  border-top: 1px solid red;
+  /*padding-bottom: 12px; */
+  padding-left: 17px;
+  padding-right: 17px;
+  /*padding-top: 12px; */
+  font-size: 14px;
+  color: #244751;
+}
+
+article.tweet header h2 {
+  padding-left: 15px;
+  float: left;
+  border: 0px;
+  margin: 0px;
+}
+
+article.tweet header img {
+  float: left;
+  border-radius: 5px;
+}
+
+article.tweet header span {
+  padding-top: 7px;
+  float: right;
+  font-size: 14px;
+}
+
+article.tweet footer #icons {
+  display: none;
+  float: right;
+  margin: 0px;
+  font-size: 20px;
+  padding-bottom: 12px;
+}
+
+article.tweet footer p {
+  line-height: 15px;
+}
 
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+article.tweet:hover footer #icons {
+  display: block;
+  line-height:;
+}
+
+article.tweet section {
+  padding: 20px;
+}
+
+.clear-fix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
