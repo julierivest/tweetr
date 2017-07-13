@@ -25,6 +25,7 @@
 }
 
 #nav-bar button {
+  line-height: 25px;
   background-color: white;
   opacity: 0.9;
   float: right;
@@ -33,8 +34,12 @@
   border: black solid 1px;
   border-radius: 10px;
   color: red;
-  font-size: 16px;
-  padding: 25px 15px 25px 15px;
+  font-size: 18px;
+  padding: 17px 15px 17px 15px;
+}
+
+#nav-bar button i {
+  font-size: 25px;
 }
 
 #nav-bar button:hover {
