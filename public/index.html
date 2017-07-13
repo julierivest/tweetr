@@ -19,22 +19,41 @@
   <!-- New tweet stylesheet -->
   <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
 
+  <!-- Font Awesome for little icons -->
+  <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+
+  <!--FLASH MSG -->
+  <!--<script type="text/javascript" src="/scripts/jquery.flash.js"></script>-->
+
+
   <!-- External JS -->
   <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
+
+  <!-- time ago func -->
+  <script type="text/javascript" src="/vendor/jquery.timeago.js"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/app.js"></script>
 
   <!-- Char Counter JS -->
   <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+
+  <!-- preventDefault on submit tweet form so doesn't change page -->
+  <script type="text/javascript" src="/scripts/form.js"></script>
+
+  <script type="text/javascript" src="/scripts/toggle.js"></script>
+
+
 </head>
 
 <body>
 
   <!-- Top nav bar (fixed) -->
-  <nav id="nav-bar">
+  <nav id="nav-bar" class="clear-fix">
+
     <img class="logo" src="/images/bird.png">
     <span class="header">Tweeter</span>
+    <button type="button">Compose</button>
   </nav>
 
   <!-- Page-specific (main) content here -->
@@ -48,40 +67,12 @@
       </form>
 
     </section>
+
     <section id="tweetsContainer">
-      <article class="tweet">
-        <header class="clear-fix">
-          <img src="http://lorempixel.com/60/60/">
-          <h2>Ziggy Stardust</h2>
-          <span>@TheNazz</span>
 
-        </header>
-        <section>I played guitar...</section>
-        <br>
 
-        <footer>
-          <p>
-            <span id="icons">&#x2691;  &#x267A;  &hearts;</span>
-            <span>when music was good</span>
-          </p>
-        </footer>
-
-      </article>
     </section>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
 
   </main>
 

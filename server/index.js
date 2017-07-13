@@ -9,7 +9,7 @@ const app           = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
-
+app.use(express.static('/scripts', express.static(__dirname + '/node_modules/flash-message/')));
 // The in-memory database of tweets. It's a basic object with an array in it.
 const db = require("./lib/in-memory-db");
 
