@@ -5,7 +5,6 @@ function renderTweets(tweetsArr) {
   };
 };
 
-
 function createTweetElement(tweetData) {
   var $tweet = $("<article>").addClass("tweet");
   var $header = $("<header>").addClass("clear-fix");
@@ -22,23 +21,20 @@ function createTweetElement(tweetData) {
   $tweet.append($footer);
   var $footerPara = $("<p>");
   $footer.append($footerPara);
-    var $icons = $("<span>").attr("id", "icons");
-    $footerPara.append($icons);
-    var $flagIcon = $("<i>").addClass("fa fa-flag").attr("aria-hidden", "true");
-    $icons.append($flagIcon);
-    var $RTIcon = $("<i>").addClass("fa fa-retweet").attr("aria-hidden", "true");
-    $icons.append($RTIcon);
-    var $heartIcon = $("<i>").addClass("fa fa-heart").attr("aria-hidden", "true");
-    $icons.append($heartIcon);
-    var s = new Date(tweetData.created_at).toISOString();
-    var $created_at = $("<span>").addClass("timeago").text($.timeago(s)); //HOW TO MAKE IT DAYS SINCE.."4 DAYS AGO"
-    $footerPara.append($created_at);
-    return $tweet;
-  };
-
-
-
-
+  var $icons = $("<span>").attr("id", "icons");
+  $footerPara.append($icons);
+  var $flagIcon = $("<i>").addClass("fa fa-flag").attr("aria-hidden", "true");
+  $icons.append($flagIcon);
+  var $RTIcon = $("<i>").addClass("fa fa-retweet").attr("aria-hidden", "true");
+  $icons.append($RTIcon);
+  var $heartIcon = $("<i>").addClass("fa fa-heart").attr("aria-hidden", "true");
+  $icons.append($heartIcon);
+  var s = new Date(tweetData.created_at).toISOString();
+  // Using timeago function to convert date into time since post
+  var $created_at = $("<span>").addClass("timeago").text($.timeago(s));
+  $footerPara.append($created_at);
+  return $tweet;
+};
 
 function loadTweets() {
   $.ajax({
@@ -48,9 +44,7 @@ function loadTweets() {
       renderTweets(data);
     }
   });
-}
-
-
+};
 
 $(document).ready(function() {
   loadTweets();

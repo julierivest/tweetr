@@ -5,14 +5,7 @@ $(document).ready(function() {
     var characs = $(this).val().length;
     var charsLeft = MAX - characs;
     $counterEl.text(charsLeft);
-    if (charsLeft < 0) {
-      $counterEl.addClass("counterRed");
-    }
-    else {
-      $counterEl.removeClass("counterRed");
-    }
+    $counterEl.toggleClass("counterRed", charsLeft < 0);
   });
 });
 
-
-//MAKE SHORTER--TAKE OUT VARS!! ESP COUNTEREL

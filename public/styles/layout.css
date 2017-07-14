@@ -1,15 +1,9 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
- */
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
 }
-
 
 body {
   margin: 0;
@@ -98,12 +92,9 @@ article.tweet footer p {
   line-height: 15px;
 }
 
-
 article.tweet:hover footer #icons {
   display: block;
 }
-
-
 
 footer p #icons i.fa {
   padding-left: 7px;
@@ -115,6 +106,8 @@ footer p #icons i.fa:hover {
 }
 
 article.tweet section {
+  /* to break long words that otherwise overflow */
+  overflow-wrap: break-word;
   padding: 20px;
 }
 
