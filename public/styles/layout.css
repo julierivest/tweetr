@@ -14,7 +14,8 @@ html {
 body {
   margin: 0;
   color: #244751;
-  background-color: #eee;
+  background: url(../images/GMBackground.jpg) fixed;
+  /*background-color: #eee;*/
   font-family: "Roboto Condensed", sans-serif;
 }
 
