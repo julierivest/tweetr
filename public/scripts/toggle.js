@@ -1,3 +1,4 @@
+//COMPOSE BUTTON --> TOGGLES COMPOSE NEW TWEET CONTAINER
 $(document).ready(function() {
   $("button").click (function() {
 
@@ -8,5 +9,4 @@ $(document).ready(function() {
     $(this).blur();
   });
 });
-
 

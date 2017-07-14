@@ -100,7 +100,17 @@ article.tweet footer p {
 
 article.tweet:hover footer #icons {
   display: block;
-  line-height:;
+}
+
+
+
+footer p #icons i.fa {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+footer p #icons i.fa:hover {
+  color: #10E9CB;
 }
 
 article.tweet section {
